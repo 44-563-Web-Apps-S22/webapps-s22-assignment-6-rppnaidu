@@ -40,8 +40,31 @@ function checkGuess(){
         alert("Wrong President")
         out.innerHTML = wrong
     }
+    out.innerHTML = "correct = "+correct +"   wrong = " + wrong;
 }
 </script>
+<div class="container">
+    <img src="red_bellied_pitta.jpg" id="img" alt="Red bellied pitta" width="100" height="100"  onclick="swapImage()">
+    <script>
+        var useImage=1;
+        function swapImage(){
+            switch(useImage){
+                case 1:
+                 document.getElementById("img").src="red_bellied_pitta.jpg";
+                 useImage=2;
+                 break;
+                case 2:
+                 document.getElementById("img").src="little_shrike.jpg";
+                 useImage=3;
+                 break;
+                case 3:document.getElementById("img").src="night_heron.jpg";
+                useImage=1;
+                 break;
+            
+            }
+        }
+    </script>
+</div>
 
 </body>
 </html> 
