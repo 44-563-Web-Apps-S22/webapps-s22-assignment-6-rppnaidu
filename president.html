@@ -52,8 +52,17 @@ function checkGuess(){
         wrong+=1;
         alert("Wrong President")
         out.innerHTML = wrong
-    }
+    
     out.innerHTML = "correct = "+correct +"   wrong = " + wrong;
+}
+if(wrong >=3){
+        wrongguess()
+    }
+
+}
+
+function wrongguess(){
+        alert("Sorry,game over")
 }
 </script>
 <div class="container">
